@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-import keyw as src
+import tools.keyw as src
 
-dat = pd.read_csv("mess.csv")
+dat = pd.read_csv("files/mess.csv")
 # print(dat.columns)
 # Index(['index', 'Job Title', 'Salary Estimate', 'Job Description', 'Rating',
 #        'Company Name', 'Location', 'Headquarters', 'Size', 'Founded',
@@ -39,7 +39,9 @@ dat = dat.dropna(subset={"Job Title"})
 dat = dat.drop(columns=["Job Description","Salary Estimate","Competitors"])
 dat["index"] = range(0,dat.shape[0])
 
-dat.to_csv("clean.csv", encoding = 'utf-8-sig', index=False)
+print(dat.head())
+
+# dat.to_csv("files/clean.csv", encoding = 'utf-8-sig', index=False)
 
 
 

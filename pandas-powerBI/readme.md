@@ -17,7 +17,7 @@ This project focuses on transforming a raw, highly unorganized, and "noisy" data
 
 Below is the final interactive report showcasing key metrics, clean role distributions, geographical job density across the United States, and strict salary brackets:
 
-![Dashboard Preview](preview.png)
+![Dashboard Preview](assets/preview.png)
 
 ---
 
